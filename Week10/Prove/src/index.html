@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <title>Court + Bootstrap</title>
+  </head>
+  <body>
+    <div class="container py-4 px-3 mx-auto">
+      <nav class="navbar navbar-expand-lg bg-light mt-5">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold text-primary" href="#">Courtney's Navigation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Favorites</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Parties
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Schedule</a></li>
+                  <li><a class="dropdown-item" href="#">Themes</a></li>
+                  <li><a class="dropdown-item" href="#">More</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid custombg mt-5">
+        <div class="container pt-5 pb-5">
+          <h1 class="fw-bold">You're invited to my party!</h1>
+          <p class="fs-4 mb-0 text-white-50">Please arrive at 7 and bring a snack to share.</p>
+          <button class="btn btn-primary">I'll be there!</button>
+        </div>
+      </div>
+
+      <div class="container pt-3">
+        <div class="row mt-5">
+          <div class="col-sm">
+            <div class="card">
+              <img src="../assets/leaf.jpg" class="card-img-top" alt="large leaves">
+              <div class="card-body p-4 rounded-bottom">
+                <h5 class="card-title fw-bold">Leaves</h5>
+                <p class="card-text">These are green leaves on a white background.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <img src="../assets/paint.jpg" class="card-img-top" alt="abstract green painting">
+              <div class="card-body p-4 rounded-bottom">
+                <h5 class="card-title fw-bold">Painting</h5>
+                <p class="card-text">This is a beautiful oil painting in shades of green.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <img src="../assets/tree.jpg" class="card-img-top" alt="small green leaves">
+              <div class="card-body p-4 rounded-bottom">
+                <h5 class="card-title fw-bold">Tree</h5>
+                <p class="card-text">This is a tree with light coming from above.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12 col-md-6 col-lg-4">
+            <h2 class="mb-5">Get party invites in your inbox!</h2>
+          </div>
+          <div class="col-sm">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="col-12 col-md-2">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

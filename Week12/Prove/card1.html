@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="card1.css">
+    <title>Playing Card 1</title>
+</head>
+<body>
+    <div class="carddiv">
+        <object>
+          <?xml-stylesheet type="text/css" href="style.css"?>
+          <svg width="400" height="560">
+            <rect class="mainrect" width="397" height="557" rx="10" x="1.5" y="1.5" />
+            <rect class="whiterect" fill="url(#checkered)" width="380" height="540" rx="10" x="10" y="10" />
+            <circle class="minicirclemain" cx="200" cy="279" r="102" />
+            <circle class="minicircle" cx="150" cy="280" r="30" />
+            <circle class="minicircle" cx="165" cy="245" r="30" />
+            <circle class="minicircle" cx="200" cy="230" r="30" />
+            <circle class="minicircle" cx="235" cy="245" r="30" />
+            <circle class="minicircle" cx="250" cy="280" r="30" />
+            <circle class="minicircle" cx="235" cy="315" r="30" />
+            <circle class="minicircle" cx="200" cy="330" r="30" />
+            <circle class="minicircle" cx="165" cy="315" r="30" />
+            <circle class="dot" cx="200" cy="280" r="3" />
+      
+            
+            <defs>
+              <pattern id="checkered" x="0" y="0" width=".125" height=".0905">
+                <line
+                  x1="0" y1="0" x2="95" y2="98"
+                  stroke="white"
+                  stroke-width="3"
+                />
+                <circle class="dot" cx="47.8" cy="25" r="3" />
+                <circle class="dot" cx="0" cy="25" r="3" />
+                <line
+                  x1="0" y1="49" x2="95" y2="-49"
+                  stroke="white"
+                  stroke-width="3"
+                />
+              </pattern>
+            </defs>
+            
+            
+            
+          </svg>
+        </object>
+      </div>
+</body>
+</html>

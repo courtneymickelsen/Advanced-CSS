@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@keyframes slideUp {
+  from {
+    transform: translateY(500px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes wiggle {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(15px);
+  }
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.sub-div {
+  overflow: hidden;
+  margin: 100px auto auto auto;
+  width: max-content;
+  border-radius: 3px;
+  max-height: 100px;
+  box-shadow: 0px 5px 10px 10px #ddd;
+  animation: 1.5s ease 0s 1 slideUp;
+}
+.sub-div form {
+  overflow: hidden;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.sub-div form input {
+  padding: 0px;
+  margin: 5px;
+  border-radius: 3px;
+}
+.sub-div form .email {
+  height: 40px;
+  padding-left: 10px;
+  animation: 2.5s ease 0s 1 slideUp;
+}
+.sub-div form .subscribe {
+  animation: 3s ease 0s 1 slideUp;
+  font-weight: bold;
+  height: 46px;
+  width: 100px;
+  color: white;
+}
+.sub-div .inactive .email {
+  border: rgb(142, 152, 180) solid 3px;
+}
+.sub-div .inactive .subscribe {
+  background-color: rgb(142, 152, 180);
+  border: rgb(142, 152, 180);
+}
+.sub-div .active .email {
+  border: blue solid 3px;
+}
+.sub-div .active .subscribe {
+  background-color: blue;
+  border: blue;
+}
+.sub-div .error .email {
+  border: red solid 3px;
+}
+.sub-div .error .subscribe {
+  background-color: red;
+  border: red;
+}
+.sub-div.error {
+  animation: wiggle 0.2s linear 0s 4 alternate;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,29 @@
+$color1: #991111;
+$color2: white;
+
+.mainrect {
+  fill: $color1;
+  stroke: $color1;
+  stroke-width: 3;
+}
+
+.whiterect {
+  // fill: none;
+  stroke: $color2;
+  stroke-width: 3;
+}
+
+.minicircle {
+  fill: none;
+  stroke: $color2;
+  stroke-width: 3;
+}
+
+.minicirclemain {
+  fill: $color1;
+}
+
+.dot {
+  fill: $color2;
+}
+

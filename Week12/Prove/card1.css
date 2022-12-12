@@ -1,0 +1,26 @@
+.mainrect {
+  fill: #991111;
+  stroke: #991111;
+  stroke-width: 3;
+}
+
+.whiterect {
+  stroke: white;
+  stroke-width: 3;
+}
+
+.minicircle {
+  fill: none;
+  stroke: white;
+  stroke-width: 3;
+}
+
+.minicirclemain {
+  fill: #991111;
+}
+
+.dot {
+  fill: white;
+}
+
+/*# sourceMappingURL=card1.css.map */

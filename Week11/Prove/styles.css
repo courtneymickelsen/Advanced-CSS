@@ -1,0 +1,20 @@
+.star {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-22.5deg);
+    background: linear-gradient(22.5deg, pink, plum);
+}
+
+.star:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    background: linear-gradient(-22.5deg, pink, plum);
+}

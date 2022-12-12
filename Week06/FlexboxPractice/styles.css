@@ -1,0 +1,37 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: gray;
+}
+
+.row-grid {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+
+.col-grid {
+    display: flex;
+    flex-flow: column wrap;
+    align-content:flex-start;
+    height: calc(4600px - 235vw);
+    max-width: 70vw;
+}
+
+div {
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px
+}
+
+div img {
+    width: 100%;
+    height: calc(100% - 28px);
+    overflow: hidden;
+}
+
+div h2 {
+    font-size: 14px;
+    margin: auto;
+    display: inline-flex;
+}

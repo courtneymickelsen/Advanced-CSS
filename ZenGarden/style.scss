@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@300&display=swap');
+@import "variables";
+@import "mixins";
+@import "keyframes";
+
+
+body {
+    font-family: $fonts-body;
+    color: $primary;
+    margin: 0px;
+}
+
+h1, h2, h3 {
+    font-family: $fonts-headlines;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h3 {
+    @include h3outline();
+    font-size: min-max(auto, 22px);
+    max-height: min-content;
+}
+
+[role=article]:hover h3 {
+    scale: 1.1;
+    @include animateh3();
+}
+
+a {
+    color: $accent1;
+    &:hover {
+        color: $background-color;
+    }
+}
+
+
+header {
+    height: $header-height;
+    background-color: $accent2;
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    border: 5px solid $accent2;
+    color: white;
+    animation: image 4s infinite alternate;
+}
+
+.page-wrapper {
+    background-image: url('./images/fog2.jpg');
+    background-attachment: fixed;
+    background-size: 100% 135%;
+    padding: 10px;
+}
+
+.main div, .preamble {
+    position: relative;
+    @include outlined($background-color);
+    background-color:rgba(255, 255, 255, 0.5);
+    width: 75%;
+    padding: 0 20px;
+    margin-top: 40px;
+    :nth-child(2) {
+        margin-top: 40px;
+    }
+
+    h3 {
+        position: absolute;
+        top: -45px;
+        right: calc(25px + -16.5%);
+        background-color: $background-color;
+        position: absolute;
+        top: -45px;
+        right: calc(25px + -16.5%);
+    }
+
+    &:nth-of-type(2n) {
+        h3 {
+            left: calc(25px + -16.5%);
+        }
+    }
+}
+
+.summary {
+    @include outlined($accent2);
+    width: 75%;
+    padding: 0 20px;
+    margin-top: -3px;
+}
+
+footer {
+    background-color: $accent2;
+    font-size: large;
+    margin: 15px 0;
+    padding: 10px 20%;
+    display: flex;
+    text-align: center;
+    a {
+        border-left: 2px solid white;
+        flex-grow: 1;
+        color: white;
+        &:first-of-type {
+            border: none;
+        }
+    }
+}
+
+.sidebar {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    h3 {
+        margin: auto;
+        position: static;
+    }
+    
+    li {
+        list-style: none;
+    }
+}
+
+.design-selection ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    padding: 0;
+    
+    li {
+        background-color:rgba(255, 255, 255, 0.5);
+        margin: 20px;
+        min-height: 70px;
+        width: 75%;
+        @include outlined($background-color);
+    }
+
+    .design-name {
+        display: block;
+        min-height: 30px;
+        width: 75%;
+        @include outlined($accent2);
+        color: white;
+        background-color: $accent2;
+    }
+}
+
+.design-archives, .zen-resources {
+    @include outlined($accent1);
+    background-color: $background-color;
+    margin: 15px 0;
+    ul {
+        padding: 0px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    li {
+        border-left: 2px solid $accent2;
+        flex-grow: 1;
+        &:first-of-type {
+            border: none;
+        }
+    }
+
+    h3 {
+        border: none;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    
+    .page-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 210px calc(310px - 10vw) auto; 
+    }
+    
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 210px auto;
+        grid-column: 1/3;
+        grid-row: 1/3;
+        header {
+            grid-column: 1/4;
+        }
+        .summary {
+            grid-column: 2;
+            font-size: 17px;
+        }
+        .preamble {
+            grid-column: 1;
+            grid-row: 2;
+        }
+    }
+    
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        .explanation {
+            grid-column: 2;
+            grid-row: 1/3;
+        }
+        .participation {
+            grid-row: 2/5;
+        }
+        .benefits {
+            grid-column: 2;
+            font-size: larger;
+        }
+        .requirements {
+            grid-column: 1/3;
+            width: 87.5%;
+            position: relative;
+            h3 {
+                position: absolute;
+                margin-left: calc(86% - 72px);
+                width: 37.5%;
+            }
+        }
+    }
+
+    footer {
+        grid-column: 1/3;
+    }
+
+    .sidebar {
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+        
+        h3 {
+            margin-left: -2px;
+            margin: auto;
+        }
+    }
+    .design-selection ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .design-archives, .zen-resources {
+        width: 75%;
+        margin: 10px auto;
+    }
+
+}

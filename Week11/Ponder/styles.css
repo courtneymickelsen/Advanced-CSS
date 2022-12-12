@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heart:before, .heart:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50px;
+    width: 50px;
+    height: 90px;
+    background: linear-gradient(orange, pink, pink, plum);
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin :0 100%;
+}
+
+.heart:after {
+    background: linear-gradient(to right, pink, plum);
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+}
+
+.heart {
+    margin: 10px;
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+
+/* star */
+.star {
+    margin: 125px 25px;
+    position: fixed;
+    top: 22px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 65px solid teal;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+
+.star:after {
+    margin: 125px 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 65px solid teal;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+
+/* gradients */
+.gradient {
+    /* background: linear-gradient(145deg, purple, white); */
+    /* background: linear-gradient(to top, white, lightpink, rgb(255, 213, 135), lightblue); */
+    /* background: radial-gradient(circle at 200px 500px, white 100px, rgb(255, 205, 212), rgb(255, 213, 135), lightblue, lightblue); */
+    background: conic-gradient(black, darkgreen, limegreen, lightgreen, honeydew, white, honeydew, lightgreen, limegreen, darkgreen, black);
+    /* background: conic-gradient(red 0 60deg, orange 0 120deg, yellow 0 180deg, green 0 240deg, blue 0 300deg, purple 0 360deg); */
+    /* background: conic-gradient(pink, sandybrown, yellow, palegreen, lightskyblue, plum, pink); */
+    /* background: conic-gradient(lavenderblush, papayawhip, lightyellow, honeydew, lightcyan, lavender, lavenderblush); */
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+}
+

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+// variables
+$color1: #172852;
+
+// blanket rules
+body {
+    font-family: 'Marcellus';
+    color: $color1;
+}
+
+a {
+    text-decoration: none;
+    color: $color1;
+    :visited {
+        color: $color1;
+    }
+}
+
+// main menu
+.menu-div {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 30px;
+    display: grid;
+    grid-template-columns: max-content auto;
+
+    &.closed {
+        transition: 1.5s ease;
+        transform: translateX(-200px);
+    }
+
+    &.open {
+        transition: 1s ease;
+        transform: translateX(0px);
+    }
+
+    ul {
+        background-color: rgb(210, 234, 243);
+        padding: 25px;
+        justify-items: center;
+        text-align: center;
+        list-style: none;
+
+        li {
+            padding: 10px;
+        }
+    }
+}
+
+.menu-button {
+    font-size: 30px;
+}

@@ -1,0 +1,17 @@
+
+@keyframes h3 {
+    from {background-color: $background-color;}
+    50% {background-color: $accent2;
+        color: white;}
+    to {background-color: $background-color;
+        color: $primary;}
+}
+
+@keyframes image {
+    0% {
+      background-image: url('./images/trees.avif');
+    }
+    100% {
+      background-image: url('./images/mountain.jpg');
+    }
+}

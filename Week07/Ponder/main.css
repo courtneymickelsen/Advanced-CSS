@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+body {
+  font-family: "Marcellus";
+  color: #172852;
+}
+
+a {
+  text-decoration: none;
+  color: #172852;
+}
+a :visited {
+  color: #172852;
+}
+
+.menu-div {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 30px;
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+.menu-div.closed {
+  transition: 1.5s ease;
+  transform: translateX(-200px);
+}
+.menu-div.open {
+  transition: 1s ease;
+  transform: translateX(0px);
+}
+.menu-div ul {
+  background-color: rgb(210, 234, 243);
+  padding: 25px;
+  justify-items: center;
+  text-align: center;
+  list-style: none;
+}
+.menu-div ul li {
+  padding: 10px;
+}
+
+.menu-button {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */

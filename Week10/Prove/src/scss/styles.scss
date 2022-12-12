@@ -1,0 +1,41 @@
+$body-bg: rgb(2, 56, 2);
+$body-color: white;
+$primary: green;
+$lightgreen: rgb(218, 228, 202);
+$font-family-sans-serif: 'Raleway', sans-serif;
+
+@import "~bootstrap/scss/bootstrap";
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar {
+    border-radius: 5px;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav nav-link {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+.custombg {
+    border-radius: 5px;
+    background: $lightgreen url('../assets/bokeh.jpg');
+    background-size: cover;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    background: $lightgreen;
+    color: $primary;
+}
+
+.btn-primary {
+    margin-top: 2em;
+}

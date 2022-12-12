@@ -1,0 +1,36 @@
+rect {
+  fill: none;
+  stroke: #111199;
+  stroke-width: 5;
+}
+
+.mainrect {
+  stroke: #111199;
+  stroke-width: 5;
+}
+
+polygon {
+  fill: #111199;
+  stroke: #111199;
+}
+
+.starrect {
+  fill: #111199;
+}
+
+.ministar {
+  fill: white;
+  stroke: white;
+}
+
+circle {
+  fill: #111199;
+}
+
+.maincircle {
+  fill: white;
+  stroke: #111199;
+  stroke-width: 5;
+}
+
+/*# sourceMappingURL=card2.css.map */

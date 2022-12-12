@@ -1,0 +1,37 @@
+$color1: #111199;
+$color2: white;
+
+rect {
+  fill: none;
+  stroke: $color1;
+  stroke-width: 5;
+}
+
+.mainrect {
+  stroke: $color1;
+  stroke-width: 5;
+}
+
+polygon {
+  fill: $color1;
+  stroke: $color1;
+}
+
+.starrect {
+  fill: $color1;
+}
+
+.ministar {
+  fill: $color2;
+  stroke: $color2;
+}
+
+circle {
+  fill: $color1;
+}
+
+.maincircle {
+  fill: $color2;
+  stroke: $color1;
+  stroke-width: 5;
+}

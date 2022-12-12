@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap");
+
+:root {
+    --mono: 0;
+    --casl: 0;
+    --wght: 400;
+    --slnt: 0;
+    --crsv: 1;
+}
+
+* {
+    font-variation-settings: "MONO" var(--mono), "CASL" var(--casl), "wght" var(--wght), "slnt" var(--slnt),
+    "CRSV" var(--crsv);
+}
+
+body {
+    font-family: Recursive, sans-serif;
+}
+
+h1, h2 {
+    --crsv: 0;
+    --wght: 600;
+    --casl: 0;
+    font-size: 35px;
+}
+
+.bold {
+    --wght: 600;
+    --casl: 0
+}
+
+.monospace {
+    --casl: 0
+    --mono: 1;
+}
+
+.cap {
+    text-transform: uppercase;
+}
+
+.alert-div {
+    --crsv: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    min-height: max-content;
+
+    .alert-heading {
+        --casl: 1;
+        --wght: 800;
+        --slnt: -15;
+        width: max-content;
+        padding: 22px 10px;
+        margin: auto;
+        border: 5px dotted rgb(190, 0, 0);
+        border-radius: 100%;
+        margin-right: 10px;
+    }
+
+    .alert-p {
+        --wght: 300;
+        padding-left: 15px;
+        border-left: 1px solid black;
+        min-height: 100px;
+    }
+}
